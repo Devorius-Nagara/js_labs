@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Тестування</h1>
+
+<form id="testForm">
+    <!-- Питання 1: Радіокнопки -->
+    <div class="question">
+        <p>1. Яка столиця України?</p>
+        <input type="radio" name="question1" value="0"> Львів<br>
+        <input type="radio" name="question1" value="0"> Харків<br>
+        <input type="radio" name="question1" value="1"> Київ<br>
+        <input type="radio" name="question1" value="0"> Одеса
+    </div>
+
+    <!-- Питання 2: Радіокнопки -->
+    <div class="question">
+        <p>2. Скільки континентів на Землі?</p>
+        <input type="radio" name="question2" value="0"> 5<br>
+        <input type="radio" name="question2" value="1"> 7<br>
+        <input type="radio" name="question2" value="0"> 8<br>
+        <input type="radio" name="question2" value="0"> 6
+    </div>
+
+    <!-- Питання 3: Прапорці -->
+    <div class="question">
+        <p>3. Оберіть океани:</p>
+        <input type="checkbox" name="question3" value="1"> Атлантичний<br>
+        <input type="checkbox" name="question3" value="0"> Амазонський<br>
+        <input type="checkbox" name="question3" value="1"> Тихий<br>
+        <input type="checkbox" name="question3" value="0"> Гірський
+    </div>
+
+    <!-- Питання 4: Прапорці -->
+    <div class="question">
+        <p>4. Вкажіть відомі планети:</p>
+        <input type="checkbox" name="question4" value="1"> Марс<br>
+        <input type="checkbox" name="question4" value="0"> Плутон<br>
+        <input type="checkbox" name="question4" value="1"> Земля<br>
+        <input type="checkbox" name="question4" value="0"> Сонце
+    </div>
+
+    <!-- Питання 5: Одинарний вибір (select) -->
+    <div class="question">
+        <p>5. Оберіть найбільшу тварину:</p>
+        <select id="question5">
+            <option value="0">Слон</option>
+            <option value="1">Синій кит</option>
+            <option value="0">Жираф</option>
+            <option value="0">Крокодил</option>
+        </select>
+    </div>
+
+    <!-- Питання 6: Множинний вибір (select) -->
+    <div class="question">
+        <p>6. Оберіть основні кольори:</p>
+        <select id="question6" multiple>
+            <option value="1">Червоний</option>
+            <option value="0">Зелений</option>
+            <option value="1">Синій</option>
+            <option value="0">Фіолетовий</option>
+        </select>
+    </div>
+
+    <!-- Питання 7: Однорядкове текстове поле -->
+    <div class="question">
+        <p>7. Напишіть ім'я першого президента США:</p>
+        <input type="text" id="question7">
+    </div>
+
+    <button type="button" onclick="calculateResults()">Завершити тестування</button>
+</form>
+
+<script src="js/mainJS.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+
+/* Загальний стиль сторінки */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.animation-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Логотип */
+.logo-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s, opacity 2s;
+}
+
+.logo-container.active img {
+    transform: scale(1.5) rotate(360deg);
+    opacity: 0.5;
+}
+
+/* Текстовий блок */
+.text-container {
+    display: none;
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.text-container.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Кнопка активації */
+.animate-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.animate-button:hover {
+    background-color: #45a049;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: #4caf50;
+    position: relative;
+}
+.RedColor {
+    color: #dc1212;
+}
+.GreenColor {
+    color: #4caf50;
+}

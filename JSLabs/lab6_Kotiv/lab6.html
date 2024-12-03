@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<form id="registrationForm">
+    <label for="email">E-mail:</label>
+    <input type="text" id="email" name="email" required>
+    <span class="error-message"></span>
+
+    <label for="name">Ім'я та Прізвище:</label>
+    <input type="text" id="name" name="name" required>
+    <span class="error-message"></span>
+
+    <label for="login">Логін:</label>
+    <input type="text" id="login" name="login" required>
+    <span class="error-message"></span>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+    <span class="error-message"></span>
+
+    <label for="postalCode">Поштовий індекс:</label>
+    <input type="text" id="postalCode" name="postalCode" required>
+    <span class="error-message"></span>
+
+    <button type="button" onclick="validateForm()">Підтвердити</button>
+</form>
+
+<script src="js/mainJS.js"></script>
+</body>
+</html>

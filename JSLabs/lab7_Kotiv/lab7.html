@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Завдання 1 -->
+<section>
+    <h2>Завдання 1</h2>
+    <div>
+        <label for="reverseInput">Введіть послідовність чисел:</label>
+        <input id="reverseInput" type="text" placeholder="1 2 3 4">
+        <button onclick="reverseNumbers()">Обернути</button>
+        <p id="reverseOutput"></p>
+    </div>
+    <div>
+        <label for="noZeroInput">Введіть числа:</label>
+        <input id="noZeroInput" type="text" placeholder="0 1 0 2 3">
+        <button onclick="removeZeros()">Видалити нулі</button>
+        <p id="noZeroOutput"></p>
+    </div>
+</section>
+
+<!-- Завдання 2 -->
+<section>
+    <h2>Завдання 2</h2>
+    <div>
+        <label for="string1">Рядок 1:</label>
+        <input id="string1" type="text" placeholder="Hello">
+        <label for="string2">Рядок 2:</label>
+        <input id="string2" type="text" placeholder="World">
+        <button onclick="compareStrings()">Порівняти</button>
+        <p id="stringCompareOutput"></p>
+    </div>
+</section>
+
+<!-- Завдання 3 -->
+<section>
+    <h2>Завдання 3</h2>
+    <div>
+        <label for="camelInput">Snake Case:</label>
+        <input id="camelInput" type="text" placeholder="my_variable, new_variable">
+        <button onclick="toCamelCase()">До Camel Case</button>
+        <p id="camelOutput"></p>
+    </div>
+    <div>
+        <label for="dateInput">Введіть текст з датами:</label>
+        <textarea id="dateInput" placeholder="2024/11/19, 2023/10/01"></textarea>
+        <button onclick="replaceDates()">Замінити дати</button>
+        <p id="dateOutput"></p>
+    </div>
+</section>
+
+</div>
+<script src="js/mainJS.js"></script>
+</body>
+</html>

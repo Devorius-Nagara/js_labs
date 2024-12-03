@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<p id="ex.1.1"></p>
+<hr>
+<input type="button" value="Click me" onClick="dateOfBirth()">
+<input type="button" value="Calculate" onClick="calculation()">
+<hr>
+<form id = "main_form">
+  <input type="text" size = "100" value="onClick" onClick="fun('Відбувся клік на текстовому елементі форми');"><br>
+  <input type="text" size = "100" value="onChange" onChange = "fun('Зміст текстового поля форми змінений');"><br>
+  <input type = "text" size = "100" id = "t_res" onMouseOver = "fun('Курсор потрапив на гіперпосилання');" onMouseOut = "fun('Курсор потрапив не на гіперпосилання');">
+  <p>onFocus </p>
+  <input type="text" size = "100" value="onFocus" onFocus = "fun('Текстовий елемент форми отримав фокус');" onSelect = "fun('В текстовому полі форми виділений текст')"><br>
+  <input type = "text" size = "100" id = "t_res2"><br>
+</form>
+<hr>
+<form id = "second_form">
+  <input type="text" id = "t_a" value=""><br>
+  <input type="text" id = "t_b" value=""><br>
+  <input type = "button" onClick = "calculation2()" value = "Розрахувати">
+</form>
+<hr>
+
+
+<h1>Пошук Товарів</h1>
+<select id="productSelect">
+  <option value="">Виберіть товар...</option>
+  <!-- Варіанти будуть додані тут динамічно -->
+</select>
+<input type="text" id="searchInput" placeholder="Введіть назву товару...">
+<button id="searchButton">Пошук</button>
+
+<table id="resultsTable">
+  <thead>
+  <tr>
+    <th>Товар</th>
+    <th>Ціна</th>
+    <th>Кількість</th>
+  </tr>
+  </thead>
+  <tbody id="resultsBody">
+  <!-- Результати будуть додані тут -->
+  </tbody>
+</table>
+
+
+<script src="js/mainJS.js"></script>
+</body>
+</html>

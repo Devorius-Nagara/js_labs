@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Завдання 1. Робота з об'єктом часу</h2>
+    <div id="currentTime" class="output">Поточний час: </div>
+    <input type="number" id="secondsInput" placeholder="Додати секунди">
+    <button onclick="addSeconds()">Додати секунди</button>
+    <input type="number" id="minutesInput" placeholder="Додати хвилини">
+    <button onclick="addMinutes()">Додати хвилини</button>
+    <input type="number" id="hoursInput" placeholder="Додати години">
+    <button onclick="addHours()">Додати години</button>
+</div>
+
+<div class="container">
+    <h2>Завдання 2.1. Виведення поточної дати, дня тижня і часу</h2>
+    <button onclick="displayCurrentDate()">Виконати</button>
+    <div id="dateOutput" class="output"></div>
+</div>
+
+<div class="container">
+    <h2>Завдання 2.2. Виведення дня і номера тижня</h2>
+    <button onclick="displayDayInfo()">Виконати</button>
+    <div id="dayInfoOutput" class="output"></div>
+</div>
+
+<script src="js/mainJS.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onLoad="clock()">
+
+<form name="clock">
+    Дата та час:
+    <input type="text" name="date" size="20" value="">
+</form>
+<hr>
+<div class="calculator">
+    <input type="text" class="display" >
+    <div class="buttons">
+        <div>
+            <button onclick='addValueToCalculate("deleteCurrent")'>CE</button>
+            <button onclick='addValueToCalculate("deleteAll")'>C</button>
+            <button onclick='addValueToCalculate("deleteOneSymb")'>&#9003;</button>
+            <button onclick='addValueToCalculate("+")'>+</button>
+        </div>
+        <div>
+            <button onclick='addValueToCalculate("7")'>7</button>
+            <button onclick='addValueToCalculate("8")'>8</button>
+            <button onclick='addValueToCalculate("9")'>9</button>
+            <button onclick='addValueToCalculate("*")'>&#x00D7;</button> <!-- Multiplication symbol -->
+        </div>
+        <div>
+            <button onclick='addValueToCalculate("4")'>4</button>
+            <button onclick='addValueToCalculate("5")'>5</button>
+            <button onclick='addValueToCalculate("6")'>6</button>
+            <button onclick='addValueToCalculate("/")'>&#x00F7;</button> <!-- Division symbol -->
+        </div>
+        <div>
+            <button onclick='addValueToCalculate("1")'>1</button>
+            <button onclick='addValueToCalculate("2")'>2</button>
+            <button onclick='addValueToCalculate("3")'>3</button>
+            <button onclick='addValueToCalculate("-")'>-</button>
+        </div>
+        <div>
+            <button onclick='addValueToCalculate("plusMinus")'>&plusmn;</button> <!-- Plus-minus -->
+            <button onclick='addValueToCalculate("0")'>0</button>
+            <button onclick='addValueToCalculate(".")'>.</button>
+            <button onclick='calculateResult()'>=</button>
+        </div>
+    </div>
+</div>
+<hr>
+<h2>Генерація таблиці за формулою A<sub>ij</sub> = 2j - i</h2>
+<form id="main_form">
+    <table>
+        <tr>
+            <td>Кількість рядків</td>
+            <td><input type="text" id="t_str" value="3"></td>
+        </tr>
+        <tr>
+            <td>Кількість стовпців</td>
+            <td><input type="text" id="t_stb" value="3"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" onClick="generateTable();" value="Побудувати таблицю">
+                <input type="button" onClick="calculateSum();" value="Підрахувати суму">
+            </td>
+        </tr>
+    </table>
+</form>
+<div id="table_div"></div> <!-- Тут буде таблиця -->
+
+<script src="js/mainJS.js"></script>
+</body>
+</html>

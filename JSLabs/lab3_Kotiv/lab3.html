@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onLoad="clock()">
+
+<!-- Завдання 1: Розрахунок площ -->
+<section id="task1">
+    <h2>Завдання 1: Розрахунок площ геометричних фігур</h2>
+    <label>Довжина: <input type="text" id="length"></label>
+    <label>Ширина: <input type="text" id="width"></label>
+    <label>Площа: <input type="text" id="area" readonly></label>
+</section>
+
+<!-- Завдання 2: Екранна клавіатура -->
+<section id="task2">
+    <h2>Завдання 2: Екранна клавіатура</h2>
+    <div id="keyboard"></div>
+    <textarea id="display"></textarea>
+    <button onclick="clearDisplay()">Очистити поле</button>
+</section>
+
+<!-- Завдання 3: Alt+Shift для зміни розкладки -->
+<section id="task3">
+    <button onclick="toggleLayout()">Alt+Shift</button>
+</section>
+
+<!-- Завдання 4: Перегляд зображень -->
+<section id="task4">
+    <h2>Завдання 4: Перегляд зображень</h2>
+    <img id="image" src="" alt="Image Viewer">
+    <button onclick="prevImage()">Назад</button>
+    <button onclick="nextImage()">Вперед</button>
+</section>
+
+<!-- Завдання 5: Перевірка знань арифметики -->
+<section id="task5">
+    <h2>Завдання 5: Перевірка знань арифметики</h2>
+    <div id="score"></div>
+    <div id="question"></div>
+    <input type="text" id="answer">
+    <button onclick="checkAnswer()">Перевірити</button>
+    <button onclick="nextQuestion()">Наступне завдання</button>
+    <div id="feedback"></div>
+</section>
+
+<!-- Завдання 6: Ієрархічне дерево -->
+<section id="task6">
+    <h2>Завдання 6: Ієрархічне дерево</h2>
+    <div id="tree">
+        <ul>
+            <li><a href="#" onclick="toggleList('fruits')">fruits</a>
+                <ul id="fruits" style="display: none;">
+                    <li>apple</li>
+                    <li>pineapple</li>
+                    <li>apricot</li>
+                    <li>pear</li>
+                    <li>lemon</li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="toggleList('vegetables')">vegetables</a>
+                <ul id="vegetables" style="display: none;">
+                    <li>potatoes</li>
+                    <li>beetroot</li>
+                    <li>carrots</li>
+                    <li>pear</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<script src="js/mainJS.js"></script>
+</body>
+</html>
